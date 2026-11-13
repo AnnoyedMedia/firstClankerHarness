@@ -1,0 +1,10 @@
+curl http://127.0.0.1:8000/v1/chat/completions \
+  -H  "Content-Type: application/json" \
+  -H "Authorization: Bearer sk-omlx-xlQwavx8QqOZrS7S6YWL5YAJ"\
+  -d '{
+    "model": "Qwen3.8-27B-oQ4e-mtp",
+    "messages": [
+        {"role": "user", "content": "Hello"}
+                ],
+    "stream": false
+}'
